@@ -14,7 +14,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../scss/variables";
+@import "../scss/main.scss";
  #tickets {
         box-sizing: border-box;
         display: flex;

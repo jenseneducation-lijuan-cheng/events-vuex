@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../scss/variables";
+@import "../scss/main.scss";
 #container {
   border-top: 1px solid $purple;
   text-align: center;

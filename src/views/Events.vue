@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import "../scss/variables";
+@import "../scss/main.scss";
  #events {
     height: 100vh;
     text-align: center;
