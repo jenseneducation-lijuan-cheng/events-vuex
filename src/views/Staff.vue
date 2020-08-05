@@ -59,7 +59,9 @@ export default {};
       background: $orange;
       border: solid 2px $purple;
       outline: none;
+      resize: none;
     }
+    
     ::placeholder {
       color: black;
       opacity: 1;

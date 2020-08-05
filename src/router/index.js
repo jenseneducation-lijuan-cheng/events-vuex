@@ -4,6 +4,7 @@ import Events from '../views/Events.vue'
 import Buy from'../views/Buy.vue'
 import Tickets from'../views/Tickets.vue'
 import Staff from'../views/Staff.vue'
+import Admin from '../views/Admin.vue'
 
 Vue.use(VueRouter)
 
@@ -30,6 +31,11 @@ Vue.use(VueRouter)
     path:'/staff',
     name:'Staff',
     component:Staff
+  },
+  {
+    path:'/admin',
+    name:'Admin',
+    component:Admin
   }
 ]
 
