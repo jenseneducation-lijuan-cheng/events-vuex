@@ -6,19 +6,22 @@
     </div>
     <div class="haha">
       <div class="artist-details">
-        <h2>Lasse-Stefanz</h2>
-        <span class="location">kjell Härnqvistsalen</span>
+        <h2>{{event.name}}</h2>
+        <span class="location">{{event.location}}</span>
         <span class="time">19:00-21:00</span>
       </div>
       <div class="price">
-        <span>350 sek</span>
+        <span>{{event.price}}</span>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+ props:["event"]
+};
+
 </script>
 
 <style lang="scss" scoped>
@@ -27,10 +30,11 @@ export default {};
   font-family: "fira sans";
   color: $white;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row;
+  width: 300px;
   margin: auto;
-  max-width: 475px;
+
   
 
   .date {
@@ -48,6 +52,7 @@ export default {};
   }
   .haha {
     display: flex;
+    width: 200px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   .artist-details {
     display: flex;
@@ -76,12 +81,13 @@ export default {};
   .price {
     display: flex;
     align-items: flex-end;
+    margin-left: auto;
     span {
       color: #37aeab;
       font-weight: bold;
       font-size: 17px;
       line-height: 20px;
-      margin-bottom:5px;
+      margin-bottom: 5px;
     }
     
   }
