@@ -1,13 +1,12 @@
 <template>
   <div id="staff">
-      <div>
-    <div>bilden</div>
-    <h1>Where It's @</h1>
-    <h2>STAFF</h2>
-      </div>
+    <div>
+      <img src="@/assets/graphics/staff-logo.png" alt="logo" class="logo" />
+      <h1>Where It's @</h1>
+      <h2>STAFF</h2>
+    </div>
     <div class="ticket">
-      <textarea placeholder=
-"Biljett
+      <textarea placeholder="Biljett
 nummer" class="staff-input" />
       <button class="verifyBtn">Verify ticket</button>
     </div>
@@ -30,6 +29,10 @@ export default {};
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  .logo {
+    width: 80px;
+    height: 75px;
+  }
   h1 {
     font-size: 20px;
     line-height: 23px;
@@ -61,12 +64,11 @@ export default {};
       outline: none;
       resize: none;
     }
-    
+
     ::placeholder {
       color: black;
       opacity: 1;
       text-align: center;
-
     }
 
     .verifyBtn {

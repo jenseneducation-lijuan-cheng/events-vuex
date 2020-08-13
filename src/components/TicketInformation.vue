@@ -32,13 +32,16 @@ export default {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  
   h1 {
     font-style: italic;
     font-weight: bold;
     font-size: 35px;
-    line-height: 41px;
-    color:$pink; 
+    line-height: 41px; 
+    color:$pink;
     margin: 50px 0 0 0;
+     
+   
   }
   span {
     font-family: "Fira Sans";

@@ -1,3 +1,12 @@
+const lowdb = require("lowdb");
+const fileSync = require("lowdb/adapters/FileSync");
+const adapter = new fileSync("./assets/data/events.json");
+const database = lowdb(adapter);
+const {
+  v4: uuidv4
+} = require('uuid');
+
+
 const {
     Router
 } = require('express')
@@ -9,15 +18,17 @@ router.get('/', async (req, res) => {
     events.pipe(res);
 });
 
-router.post('/', async (req, res) => {
-    const order = {
-        eta: 13,
-        orderNr: 'SW921389B',
-    }
-
-    setTimeout(() => {
-        res.send(order);
-    }, 2000);
-});
+router.post('/admin', async (req, res) => {
+        const eventInfo = req.body
+        //console.log(eventInfo)
+        const addEvent = database
+        .get("events")
+        .push(eventInfo
+         
+        )
+        const data = await addEvent
+        .write();
+        res.send(data)
+      });
 
 module.exports = router

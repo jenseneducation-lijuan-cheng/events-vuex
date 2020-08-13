@@ -72,6 +72,7 @@ export default {
       font-size: 22px;
       line-height: 26px;
       margin-bottom: 0;
+      cursor: pointer;
     }
     .location {
       font-size: 12px;

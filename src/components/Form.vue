@@ -2,26 +2,68 @@
   <div id="form">
     <h2>Add Event</h2>
     <div class="part2">
-      <input type="text" class="put long" placeholder="Name" />
-      <input type="text" class="put long" placeholder="Where" />
-      <input type="text" class="put long" placeholder="Date" />
+      <input type="text" class="put long" placeholder="Name" v-model="newEvent.name" />
+      <input type="text" class="put long" placeholder="Where" v-model="newEvent.location" />
+      <input type="text" onfocus="(this.type='date')" class="put long" placeholder="Date" v-model="newEvent.date" />
     </div>
     <div class="part1">
-      <input type="text" class="put short" placeholder="From Time" />
-      <input type="text" class="put short" placeholder="To Time" />
+      <input type="text" onfocus="(this.type='time')" class="put short" placeholder="From Time" v-model="newEvent.start" />
+      <input type="text" onfocus="(this.type='time')"   class="put short" placeholder="To Time" v-model="newEvent.end" />
     </div>
     <div class="part1">
-      <input type="text" class="put short" placeholder="Tickets" />
-      <input type="text" class="put short" placeholder="Price" />
+      <input type="text" class="put short" placeholder="Tickets" v-model="newEvent.total"/>
+      <input type="text" class="put short" placeholder="Price"  v-model="newEvent.price"/>
     </div>
     
-    <button>Add the event</button>
+    <button @click="createEvents">Add the event</button>
+    <p class="error-text" v-show="!valid">Please fill in the blanks</p>
 
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+
+  data() {
+    return {
+      newEvent:{
+       date:"",
+        name: "",
+        price: "",
+        location: "",
+        start: "",
+        end: "",
+        total: "",
+        
+      },
+      valid: true,
+    }
+  },
+  methods: {
+    createEvents() {
+      if (this.date != "") {
+        var format = { month: "short", day: "numeric" };
+        let date = new Date(this.date).toLocaleDateString("en-US", format);
+        this.newEvent.month = date.replace(/[^A-Z, a-z]/g, "").slice(0, -1);
+        this.newEvent.day = date.replace(/[^0-9]/g, "");
+      }
+     
+       if (
+          (this.newEvent.name != "") &
+          (this.newEvent.location != "") &
+          (this.newEvent.start != "") &
+          (this.newEvent.end != "")
+        ) {
+          this.$store.dispatch("createEvent", this.newEvent);
+          //hämta alla events igen 
+          //this.$store.dispatch("getEvents");
+          this.valid = true;
+        } else {
+          this.valid = false;
+        }
+    }
+  }
+};
 </script>
 
 <style lang="scss" scoped>
@@ -39,7 +81,8 @@ export default {};
     box-sizing: border-box;
     border-radius: 3px;
     margin-bottom: 10px;
-    background: $darkPurple;
+    background:transparent;
+    color: $white;
   }
   .long {
     width: 400px;
@@ -84,11 +127,17 @@ export default {};
     text-align: center;
 
   }
+
   input{
       padding-left:6px;
   }
   input:hover{
     border: 1px solid rgba(24,160,251);
 }
+.error-text {
+      color: red;
+      margin: 8px 0 0;
+      font-size: 14px;
+    }
   }
 </style>

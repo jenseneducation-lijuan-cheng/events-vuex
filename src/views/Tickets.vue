@@ -1,14 +1,19 @@
 <template>
   <div id="tickets">
      <router-link class="back-btn" to="/events">Back</router-link>
-      <Ticket/>
+      <Ticket v-bind:event="event"/>
   </div>
 </template>
 
 <script>
 import Ticket from '../components/Ticket'
 export default {
-    components:{ Ticket}
+    components:{ Ticket},
+    computed: {
+      event() {
+         return this.$store.state.event;
+      }
+    }
 
 }
 </script>

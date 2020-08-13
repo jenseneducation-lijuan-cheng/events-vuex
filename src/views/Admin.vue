@@ -1,8 +1,8 @@
 <template>
   <div id="admin">
-   <div class="admin-logo">bilden</div>
+   <img class="admin-logo" src="@/assets/graphics/logologo.png" alt="admin-logo">
    <div class="container">
-   <Events/>
+   <Events v-bind:events="events" />
    <Form/>
    </div>
   </div>
@@ -11,11 +11,24 @@
 <script>
 import Events from "../components/Events"
 import Form from "../components/Form"
+import { mapActions } from "vuex";
 export default {
     components:{
         Events,
         Form,
+    },
+     methods: {
+    ...mapActions(["getEvents"])
+  },
+  computed: {
+    events() {
+      return this.$store.state.events;
     }
+  },
+
+  created() {
+    this.getEvents();
+  }
 
 }
 </script>

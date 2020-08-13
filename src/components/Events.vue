@@ -2,15 +2,11 @@
   <div id="events">
     <ul class="all part">
       <h4>NAMN</h4>
-      <li class="name">Lasse Stafanz</li>
-      <li class="name">Lasse Stafanz</li>
-      <li class="name">Lasse Stafanz</li>
+      <li class="name" v-for="event in events" :key="event.id">{{event.name}}</li>
     </ul>
     <ul class="all number">
       <h4>VAR</h4>
-      <li class="color">kjell Härnqvistsalen</li>
-      <li class="color">kjell Härnqvistsalen</li>
-      <li class="color">kjell Härnqvistsalen</li>
+      <li class="color" v-for="event in events" :key="event.id" >{{event.location}}</li>
     </ul>
     <ul class="all number">
       <h4>ANTAL PLATSER</h4>
@@ -26,19 +22,21 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props:["events"],
+};
 </script>
 
 <style lang="scss" scoped>
 @import "../scss/main.scss";
 @import"../scss/admin.scss";
 #events {
+ 
+  width: 700px;
+  height: auto;
+  background-color:$darkPurple;
   display: flex;
   flex-direction: row;
-  width: 700px;
-  height: 300px;
-  background-color:$darkPurple;
-
   .all {
     font-family: "Fira Sans";
     list-style-type: none;
@@ -56,7 +54,7 @@ export default {};
     line-height: 16px;
     color: $pink;
     text-transform: uppercase;
-    margin-top:20px;
+    margin:20px 0 30px 0 ;
   }
   .name {
     margin-bottom: 20px;

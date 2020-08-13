@@ -9,3 +9,8 @@ export async function fetchEvents() {
   const data = response.data.events
   return data
 }
+export async function addNewEvent(newEvent) {
+  const response = await api.post('/events/admin', newEvent)
+  const data = response.data.events
+  return data;
+}

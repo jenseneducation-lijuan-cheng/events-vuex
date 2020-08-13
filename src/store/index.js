@@ -13,11 +13,19 @@ export default new Vuex.Store({
     getEvents(state, data) {
       state.events = data;
     },
+    createEvent(state,newEvent){
+      state.events.push (newEvent);
+    }
   },
   actions: {
     async getEvents(context) {
       const data = await API.fetchEvents();
       context.commit("getEvents", data);
+    },
+    async createEvent(context,newEvent) {
+      this.state.loading = true;
+      await API.addNewEvent(newEvent);
+      context.commit("createEvent", newEvent);
     },
   },
   modules: {
