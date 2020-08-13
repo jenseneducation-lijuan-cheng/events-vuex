@@ -24,14 +24,19 @@
     </div>
     <div class="barcode">
       <img src="@/assets/graphics/A2ED7barcode.png" alt="barcode" />
-      <p class="ticket-number">Biljettnummer:11111111100000</p>
+      <p class="ticket-number">Biljettnummer:{{ticket}}</p>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["event"]
+  props: ["event"],
+  computed: {
+    ticket() {
+        return this.$store.state.ticketNumber
+    }
+  }
 };
 </script>
 

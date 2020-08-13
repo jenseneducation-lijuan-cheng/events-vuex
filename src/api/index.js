@@ -14,3 +14,8 @@ export async function addNewEvent(newEvent) {
   const data = response.data.events
   return data;
 }
+export async function buyTicket(event){
+  const res = await api.post("/events/buy", event);
+    const data = res.data;
+    return data;
+}

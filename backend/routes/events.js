@@ -30,5 +30,20 @@ router.post('/admin', async (req, res) => {
         .write();
         res.send(data)
       });
+   router.post('/buy', async (req,res) => {
+    const eventInfo = req.body 
+    const ticketsNumber = uuidv4().split("-")[0];
+    const myData = {
+        event: eventInfo, 
+        ticket: ticketsNumber
+    }
+     const addEvent = database
+        .get("tickets")
+        .push(myData)
+        const data = await addEvent
+        .write();
+        res.send(myData)
+     
+   })   
 
 module.exports = router

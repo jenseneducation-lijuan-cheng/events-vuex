@@ -4,28 +4,32 @@
       You are about to score
       <br />some tickets to
     </h3>
-    <TicketInformation v-bind:event="event"/>
-    <button class="book" @click="goToTickets()">Beställ</button>
+    <TicketInformation v-bind:event="event" />
+    <button class="book" @click="goToTickets">Beställ</button>
   </div>
 </template>
 
 <script>
 import TicketInformation from "../components/TicketInformation";
+import { mapActions } from "vuex";
 export default {
   components: {
     TicketInformation
   },
   methods: {
-    goToTickets() {
+       ...mapActions(["buyTicket"]),
+    async goToTickets() {
+      await this.buyTicket(this.event);
       this.$router.push("/tickets");
     }
+
+ 
   },
-    computed: {
-      event() {
-         return this.$store.state.event;
-      }
+  computed: {
+    event() {
+      return this.$store.state.event;
     }
-  
+  }
 };
 </script>
 
