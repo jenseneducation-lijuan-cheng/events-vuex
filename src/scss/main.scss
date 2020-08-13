@@ -4,14 +4,19 @@
 
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-  background: $purple;
+  background-color: $purple;
+ height: 100%;
+}
+body{
+  margin: 0;
+  border-top: 1px solid $purple;
+  
 }
 
-body {
-  margin: 0 1rem;
-  background: $purple;
 
-}
+

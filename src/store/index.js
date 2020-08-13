@@ -6,7 +6,8 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    events: []
+    events: [],
+    event:{}
   },
   mutations: {
     getEvents(state, data) {

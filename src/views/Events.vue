@@ -33,7 +33,6 @@ created(){
  #events {
     height: 100vh;
     text-align: center;
-    box-sizing: border-box;
     width: 100vw;
     margin: auto;
     background:$purple;

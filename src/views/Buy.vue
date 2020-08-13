@@ -4,7 +4,7 @@
       You are about to score
       <br />some tickets to
     </h3>
-    <TicketInformation />
+    <TicketInformation v-bind:event="event"/>
     <button class="book" @click="goToTickets()">Beställ</button>
   </div>
 </template>
@@ -15,12 +15,17 @@ export default {
   components: {
     TicketInformation
   },
-  methods:{
-    goToTickets(){
-         
-       this.$router.push("/tickets")
-  }
-  }
+  methods: {
+    goToTickets() {
+      this.$router.push("/tickets");
+    }
+  },
+    computed: {
+      event() {
+         return this.$store.state.event;
+      }
+    }
+  
 };
 </script>
 

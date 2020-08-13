@@ -1,15 +1,28 @@
 <template>
   <div class="midden">
-    <h1>Lasse-Stefanz</h1>
-    <h3>19:00-21:00</h3>
-    <span>@kjell Härnqvistsalen</span>
+    <h1>{{event.name}}</h1>
+    <h3>{{time}}</h3>
+    <span>@{{event.location}}</span>
 
-    <div class="price">350 sek</div>
+    <div class="price">{{event.price}} sek</div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props:["event"]
+  ,
+  computed:{
+  time() {
+        let json = this.$store.state.event.date
+        let day = json.day
+        let month = json.month
+        let start = json.time.start
+        let end = json.time.end 
+         return `${day} ${month} kl ${start} - ${end}`
+      }
+  }
+};
 </script>
 
 <style lang ="scss" coped>

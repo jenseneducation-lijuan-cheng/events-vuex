@@ -1,17 +1,17 @@
 <template>
-  <div id="wrapper">
+  <div id="wrapper" @click="goBuy()">
     <div class="date">
-      <span>21</span>
-      <span>May</span>
+      <span>{{event.date.day}}</span>
+      <span>{{event.date.month}}</span>
     </div>
     <div class="haha">
       <div class="artist-details">
         <h2>{{event.name}}</h2>
         <span class="location">{{event.location}}</span>
-        <span class="time">19:00-21:00</span>
+        <span class="time">{{event.date.time.start}}-{{event.date.time.end}}</span>
       </div>
       <div class="price">
-        <span>{{event.price}}</span>
+        <span>{{event.price}} sek</span>
       </div>
     </div>
   </div>
@@ -19,7 +19,15 @@
 
 <script>
 export default {
- props:["event"]
+ props:["event"],
+ methods:{
+   goBuy(){
+    
+     this.$store.state.event = this.event
+     this.$router.push("/buy")
+   }
+
+ }
 };
 
 </script>
@@ -52,7 +60,7 @@ export default {
   }
   .haha {
     display: flex;
-    width: 200px;
+    width: 250px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   .artist-details {
     display: flex;
