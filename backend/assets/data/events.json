@@ -87,9 +87,10 @@
       },
       "tickets": {
         "total": "1000",
-        "sold": 0
+        "sold": 2
       }
     }
+ 
   ],
   "tickets": [
     {
@@ -490,6 +491,531 @@
         }
       },
       "ticket": "f1624bf8"
+    },
+    {
+      "event": {
+        "id": 2,
+        "name": "Pelle Trubadur",
+        "price": 110,
+        "location": "Pubelipuben",
+        "date": {
+          "month": "MAR",
+          "day": "29",
+          "time": {
+            "start": "22.00",
+            "end": "00.00"
+          }
+        },
+        "tickets": {
+          "total": 100,
+          "sold": 19
+        }
+      },
+      "ticket": "319b5cd1"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "7acc054c"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "849c46f2"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "1218b947"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "fb635899"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "81f73cda"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "d12439d8"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "17b27643"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "53628031"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "4d24d6a9"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "d64b6be3"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "90124bfa"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "315e49d5"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "016fa084"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "a7b98d5a"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "9ee86127"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "8bf55e6b"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "1f961cea"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "38062773"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "015d206e"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "391de256"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "047ee300"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "71048201"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 0
+        }
+      },
+      "ticket": "0c407566"
+    },
+    {
+      "event": {
+        "id": "70014691-4c78-4cd2-95ae-6402472be7da",
+        "name": "JOHAN",
+        "price": "200",
+        "location": "Johanneshov",
+        "date": {
+          "month": "Feb",
+          "day": "17",
+          "time": {
+            "start": "02:03",
+            "end": "00:56"
+          }
+        },
+        "tickets": {
+          "total": "1000",
+          "sold": 1
+        }
+      },
+      "ticket": "326122e5"
     }
   ]
 }

@@ -25,7 +25,20 @@ export default {
         display: flex;
         height: 100vh;
         width: 100vw;
-        background: linear-gradient($pink 0%, $purple 40%)
+        background: linear-gradient($pink 0%, $purple 40%);
+        .back-btn{
+            color: $purple;
+            margin-left: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+            position: absolute;
+            left:50px;
+            text-decoration: none;
+            color:$purple;
+             &:hover {
+                color: $white;
+             }
+   }
  }
 
 </style>

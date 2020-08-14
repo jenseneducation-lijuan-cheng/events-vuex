@@ -1,5 +1,6 @@
 <template>
   <div id="container">
+    <router-link class="back" to="/events">Back</router-link>
     <h3 class="top">
       You are about to score
       <br />some tickets to
@@ -17,13 +18,11 @@ export default {
     TicketInformation
   },
   methods: {
-       ...mapActions(["buyTicket"]),
+    ...mapActions(["buyTicket"]),
     async goToTickets() {
       await this.buyTicket(this.event);
       this.$router.push("/tickets");
     }
-
- 
   },
   computed: {
     event() {
@@ -44,6 +43,19 @@ export default {
   height: 100vh;
   width: 100vw;
   margin: auto;
+  .back{
+            color: $purple;
+            margin-left: 20px;
+            margin-top: 20px;
+            position: absolute;
+            font-weight: bold;
+            left:50px;
+            text-decoration: none;
+            color:$pink;
+             &:hover {
+                color: $white;
+             }
+   }
   .top {
     margin: 80px 0 0 0;
     font-family: "Fira Sans";
@@ -65,4 +77,5 @@ export default {
     cursor: pointer;
   }
 }
+
 </style>

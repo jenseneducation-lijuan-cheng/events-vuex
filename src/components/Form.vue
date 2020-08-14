@@ -11,7 +11,7 @@
       <input type="text" onfocus="(this.type='time')"   class="put short" placeholder="To Time" v-model="newEvent.end" />
     </div>
     <div class="part1">
-      <input type="text" class="put short" placeholder="Tickets" v-model="newEvent.total"/>
+      <input type="text" class="put short" placeholder="Tickets" v-model="newEvent.tickets.total"/>
       <input type="text" class="put short" placeholder="Price"  v-model="newEvent.price"/>
     </div>
     
@@ -33,7 +33,11 @@ export default {
         location: "",
         start: "",
         end: "",
-        total: "",
+        tickets:{
+          total: "",
+          sold: 0
+        }
+        
         
       },
       valid: true,

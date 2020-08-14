@@ -10,13 +10,13 @@
     </ul>
     <ul class="all number">
       <h4>ANTAL PLATSER</h4>
-      <li class="color">300</li>
-      <li class="color">300</li>
+      <li class="color" v-for="event in events" :key ="event.id">{{event.tickets.total}}</li>
+     
     </ul>
     <ul class="all number">
       <h4>SÅLDA BILJETTER</h4>
-      <li class="color">125</li>
-      <li class="color">125</li>
+      <li class="color" v-for="event in events" :key ="event.id">{{event.tickets.sold}}</li>
+     
     </ul>
   </div>
 </template>
