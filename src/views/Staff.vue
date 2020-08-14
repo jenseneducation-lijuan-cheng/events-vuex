@@ -7,14 +7,33 @@
     </div>
     <div class="ticket">
       <textarea placeholder="Biljett
-nummer" class="staff-input" />
-      <button class="verifyBtn">Verify ticket</button>
+nummer" class="staff-input"  v-model="ticketNr"/>
+      <button class="verifyBtn" @click="verifyTicket">Verify ticket</button>
+      <h1 v-if="valid">Verified!</h1>
+      <h1 v-else>Not verified</h1>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+import { mapActions } from "vuex";
+export default {
+  data:()=>({
+    ticketNr:"",
+    valid:false
+
+  }),
+  methods: {
+   async verifyTicket(){
+
+     await this.checkTicket(this.ticketNr)
+     this.valid = this.$store.state.valid
+   },
+
+       ...mapActions(["checkTicket"]),
+   
+  }
+};
 </script>
 
 <style lang="scss" scoped>

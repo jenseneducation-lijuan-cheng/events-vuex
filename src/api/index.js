@@ -19,3 +19,9 @@ export async function buyTicket(event){
     const data = res.data;
     return data;
 }
+export async function checkTicket(ticketNr){
+  const res = await api.get(`/events/staff/${ticketNr}` );
+    const data = res.data;
+    return data;
+}
+

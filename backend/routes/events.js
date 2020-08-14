@@ -45,5 +45,20 @@ router.post('/admin', async (req, res) => {
         res.send(myData)
      
    })   
+   router.get('/staff/:ticketNr',async (req,res) => {
+       const ticketNu = database.get('tickets').find(
+           {ticket: req.params.ticketNr}).value()
+        let valid = false;
+        if (ticketNu != undefined) {
+            valid = true;
+        }
+       let response = {
+         valid: valid
+       }
+       res.send(response)
+     });
+     
+
+
 
 module.exports = router

@@ -10,6 +10,7 @@ export default new Vuex.Store({
     event:{},
     ticketNumber:"",
     loading: false,
+    valid:false,
   },
   mutations: {
     getEvents(state, data) {
@@ -20,6 +21,9 @@ export default new Vuex.Store({
     },
     updateTicketNumber(state,data){
       state.ticketNumber = data.ticket
+    },
+    verifyTicketNumber(state,data){
+      state.valid = data.valid
     }
 
   },
@@ -37,6 +41,10 @@ export default new Vuex.Store({
      const data = await API.buyTicket(event);
       
       context.commit("updateTicketNumber", data)
+    },
+    async checkTicket(context,ticketNr){
+      const data = await API.checkTicket(ticketNr);
+      context.commit("verifyTicketNumber",data)
     }
   },
   modules: {
