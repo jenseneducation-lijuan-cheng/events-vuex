@@ -45,9 +45,9 @@ export default {
   },
   methods: {
     createEvents() {
-      if (this.date != "") {
+      if (this.newEvent.date != "") {
         var format = { month: "short", day: "numeric" };
-        let date = new Date(this.date).toLocaleDateString("en-US", format);
+        let date = new Date(this.newEvent.date).toLocaleDateString("en-US", format);
         this.newEvent.month = date.replace(/[^A-Z, a-z]/g, "").slice(0, -1);
         this.newEvent.day = date.replace(/[^0-9]/g, "");
       }
